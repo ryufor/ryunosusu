@@ -254,6 +254,7 @@ header{
     width: 744px;
     height:900px;
     display: flex;
+    background-size: cover;
 }
 .topleftside{
     width: 575px;
