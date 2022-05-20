@@ -1,1 +1,1208 @@
-aa
+/* whole page */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
+@font-face {
+    font-family: "Montserrat";
+    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/Montserrat-ExtraBold.otf') format('opentype');
+}
+@font-face {
+    font-family: "FuturaBookC";
+    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaBookC - FuturaBookC - BookC.ttf') format('truetype');
+}
+@font-face {
+    font-family: "FuturaDemiC";
+    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaDemiC Regular.otf') format('opentype');
+}
+body{
+    background: #0F0F0F;
+    margin: 0;
+}
+
+
+
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'FuturaDemiC';
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+h4{
+    font-family: 'FuturaDemiC';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+p{
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    margin: 0;
+    color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style:none;
+}
+
+
+/* header */
+header{
+    position: fixed;
+    margin: 0 auto;
+    width: 1366px;
+    height: 88px;
+    z-index:2;
+    background-color: transparent;
+}
+
+.headerContainer{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.constanttop{
+    height: 100%;
+    width: 100%;
+}
+.icon{
+    position: absolute;
+    width: 105px;
+    height: 50px;
+    left: calc(50% - 105px/2 - 527.5px);
+    top: 21px;
+    cursor: pointer;
+}
+.menucontainer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.menu{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin-top: 0;
+    position: absolute;
+    width: 614px;
+    height: 20px;
+    left: calc(50% - 614px/2 - 27.5px);
+    top: 36px;
+}
+.menu ul li{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.menu ul li a{
+    color:#FFFFFF;
+    font-family: 'FuturaDemiC';
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.reservation{
+    position: absolute;
+    width: 160px;
+    height: 50px;
+    left: calc(50% - 160px/2 + 500px);
+    top: 21px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    box-shadow: 0px 10px 20px -10px rgba(145, 10, 183, 0.6);
+    border-radius: 10px;
+}
+.reservation a{
+    font-family: 'FuturaDemiC';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 50px;
+    display: block;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/* top */
+.top{
+    margin: 0 auto;
+    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background 1st screen desktop.png");
+    width: 1366px;
+    height:600px;
+    display: flex;
+}
+.topleftside{
+    width: 575px;
+    height: 405px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    margin-top: 154px;
+}
+.topleftside h1{
+    height: 240px;
+    line-height: 120%;
+}
+.topleftside p{
+    margin-top: 15px;
+    height: 40px;
+    line-height: 20px;
+}
+.toprightimg{
+    width: 560px;
+    height: 405px;
+    margin-left: 25px;
+    margin-top: 154px;
+}
+.buttoncontainer{
+    display: flex;
+}
+.buttoncontainer a{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'FuturaDemiC';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.bookbutton{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 260px;
+    height: 80px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 20px rgba(145, 10, 183, 0.6));
+}
+.bookbutton a{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.infobutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 260px;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+/* suggestion */
+.suggestion{
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    margin-top: 80px;
+    width: 1160px;
+    height: 600px;
+}
+.suggestion h1{
+    width: 661px;
+    height: 94px;
+    line-height: 47.5px;
+}
+.problems{
+    width: 100%;
+    height: 138px;
+    margin-top: 74px;
+}
+.problems ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style-type:none;
+}
+.problems ul li{
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 10px;
+    width: 260px;
+    height: 138px;
+    backdrop-filter: blur(4px);
+    margin-right: 40px;
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  
+}
+.problems ul li h4:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #E919E5;
+    margin-top: 0;
+}
+.problems ul li h4{
+    margin-top: 10px;
+}
+.mysterioustext{
+    margin-top: 132px;
+    width: 1094px;
+    height: 162px;
+
+}
+.mysterioustext h3{
+    font-family: 'FuturaBookC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+}
+
+/* achivement */
+.achivement{
+    margin-top: 171px;
+    height: 597px;
+    width: 1160px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    position: relative;
+}
+.achivement h1{
+    height: 61px;
+    line-height: 61px;
+}
+.achivement div{
+    position: absolute;
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box,
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.achivement div h2{
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110px;
+    height: 110px;
+    align-items: center;
+    letter-spacing: -0.05em;
+}
+.achivement div h2 span{
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    align-items: baseline;
+    text-transform: none;
+    display: inline-block;
+}
+.achivement div p{
+    color: rgba(231, 0, 227, 1);
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.leftcircle{
+    width: 443px;
+    height: 443px;
+    left: calc(50% - 443px/2 - 343.5px);
+    top: 154px;
+}
+.leftcircle h2, .leftcircle p{
+    margin-left: 42px;
+}
+.leftcircle h2{
+    margin-top: 149px;
+    margin-bottom: 0;
+}
+.leftcircle p{
+    width: 267px;
+}
+.centercircle{
+    width: 377px;
+    height: 377px;
+    left: calc(50% - 377px/2 + 6.5px);
+    top: 31px;
+}
+.centercircle h2, .centercircle p{
+    margin-left: 76px;
+}
+.centercircle h2{
+    margin-top: 102px;
+    margin-bottom: 0;
+}
+.centercircle p{
+    width: 187px;
+}
+.rightcircle{
+    width: 395px;
+    height: 395px;
+    left: calc(50% - 395px/2 + 356.5px);
+    top: 202px;
+}
+.rightcircle h2,.rightcircle p{
+    margin-left: 64px;
+}
+.rightcircle h2{
+    margin-top: 119px;
+    margin-bottom: 0;
+}
+.rightcircle p{
+    width:220px;
+}
+
+/* partners */
+.partners{
+    margin-top: 131px;
+    height: 336px;
+    width: 1160px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    position: relative;
+}
+.partners h1{
+    height: 61px;
+    line-height: 61px;
+}
+.partners h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.companies{
+    width: 100%;
+    height: 220px;
+    margin-top: 55px;
+}
+.companies ul, .companies ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.companies ul{
+    margin: 0;
+    padding: 0;
+}
+.companies ul li{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    margin-right: 40px;
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+/* experts */
+.experts{
+    margin-top: 120px;
+    height: 1219px;
+    width: 1160px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    position: relative;
+}
+.experts h1{
+    height: 94px;
+    line-height: 95%;
+    width: 533px;
+}
+.experts h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.expertscontainer{
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+.expertscontainer > div{
+    width: 560px;
+    height: 323px;
+    display: flex;
+    background: rgba(29, 29, 29, 1);
+    padding-top: 20px;
+}
+.expertscontainer > div > img{
+    width: 200px;
+    height: 249px;
+}
+.expertdescriptioncontainer{
+    height: 303px;
+}
+.expertdescription div > h4{
+    height: 46px;
+    width: 194px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.experttext p{
+    margin-top: 10px;
+    width: 340px;
+    height: 80px;
+    line-height: 20px;
+}
+.experttext a{
+    margin-top: 10px;
+    display: flex;
+    width: 141px;
+    height: 23px;
+    position: relative;
+    align-items: baseline;
+    cursor: pointer;
+}
+.expertdescription div a h4{
+    font-weight: 600;
+    height: 100%;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+}
+.expertdescription div a span{
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-right: 2px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+}
+.expertdescription div a span::after{
+    content: "";
+    background: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    display: block;
+    width: 2px;
+    height: 13px;
+    margin-top: -2.5px;
+    margin-left: 3px;
+    transform: rotate(45deg);
+}
+.insta{
+    margin-top: 20px;
+    height: 14px;
+    cursor: pointer;
+}
+.insta a{
+    display: flex;
+}
+.insta a img{
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+}
+.insta a p{
+    color: rgba(233, 25, 229, 1);
+    width: 64px;
+    height: 14px;
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.expertdescriptioncontainer .bookbutton{
+    margin-top: 20px;
+}
+.firstexpert{
+    margin-right: 40px;
+}
+.thirdexpert{
+    margin-top: 40px;
+}
+
+
+
+.popcontainer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: .6s;
+}
+.pop{
+    width: 1160px;
+    height: 450px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    display: flex;
+    padding: 35px 10px 0 10px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+.pop span img{
+    position: absolute;
+    width: 15.73px;
+    height: 15.73px;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+.pop img{
+    width: 322px;
+    height: 401px;
+}
+.pop > div{
+    height: 340px;
+    width: 700px;
+    margin-left: 40px;
+}
+.pop div h2{
+    width: 481px;
+    height: 49px;   
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 30px 0 0;
+}
+#popupback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+    cursor: pointer;
+}
+.status{
+    margin-top: 10px;
+    width: 337px;
+    height: 21px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+.explanation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
+    width: 700px;
+    height: 130px;
+    margin-top: 10px;
+}
+.explanation p{
+    line-height: 20px;
+}
+.bookbuttonwhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 260px;
+    height: 80px;
+    border: none;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 20px rgba(255, 255, 255, 0.6));
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #910AB7;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin: auto;
+    margin-top:40px;
+}
+.contactform{
+    width: 1154px;
+    height: 279px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: calc(50% - 1154px/2);
+    display: flex;
+}
+.contactform > div{
+    padding: 0px;
+    gap: 15px;
+    width: 527px;
+    height: 188px;
+    padding-top: 40px;
+    margin-left: 30px;
+}
+.contactform div h3{
+    width: 445px;
+    height: 105px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.contactform div h4{
+    margin-top: 15px;
+    height: 23px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.contactform p{
+    width: 320px;
+    height: 40px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.contactform form{
+    width:527px;
+    height:199px;
+    margin-top: 40px;
+    margin-left: 40px;
+    position: relative;
+}
+.formname, .formtel{
+    width: 502px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    padding: 0;
+}
+.formtel{
+    margin-top: 30px;
+}
+.formname::placeholder, .formtel::placeholder{
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+input[type=text]:focus, input[type=tel]:focus {
+    outline: none;
+}
+
+/* form!!!!! */
+form h4{
+    width: 502px;
+    height: 90px;
+    text-align: center;
+}
+
+form button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 260px;
+    height: 80px;
+    border:none;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 20px rgba(255, 255, 255, 0.6));
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #910AB7;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin: auto;
+    margin-top: 28.5px;
+    cursor: pointer;
+}
+
+/* compriment */
+.compriment{
+    width: 1160px;
+    height: 340px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    margin-top: 120px;
+}
+.compriment h1{
+    height: 122px;
+    line-height: 95%;
+    width: 560px;
+}
+.compriment h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.compriment ul{
+    display: flex;
+    padding: 0;
+    height: 158px;
+    margin-top: 60px;
+    width: 100%;
+    list-style-type:none;
+}
+.compriment ul li{
+    width: 359px;
+    height: 100%;
+    display: flex;
+    margin-right: 41px;
+}
+.compriment ul li img{
+    width: 80px;
+    height: 80px;
+    margin-right: 19px;
+    border-radius: 50%;
+}
+.coments{
+    width: 260px;
+    height: 84px;
+}
+.coments p:nth-child(1){
+    font-weight: 600;
+    line-height: 21px;
+}
+.coments p:nth-child(2){
+    height: 21px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 21px;
+    color: #E919E5;
+    margin-top: 10px;
+}
+.coments p:nth-child(3){
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 1px;
+}
+.coments p:nth-child(4){
+    width: 146px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF; 
+    margin-top: 10px;
+}
+
+/* proccess */
+.process{
+    height: 397px;
+    width: 1160px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    margin-top: 120px;
+}
+.process h1{
+    height: 47px;
+    line-height: 95%;
+    width: 533px;
+}
+.process h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.process .problems{
+    margin-top: 40px;
+    height: 190px;
+}
+.process .problems ul li h3{
+    width: 143px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #CC02C9;
+    margin: 0;
+}
+.process .problems ul li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    height: 190px;
+    padding: 16px;
+}
+.problems ul li img{
+    width: 63px;
+    height: 63px;
+}
+.process .problems ul li p{
+    width: 222px;
+    height: 63px;
+    line-height: 21px;
+    position: absolute;
+    bottom: 20px; 
+   font-family: 'FuturaDemiC';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.process .problems ul li p span{
+    position: absolute;
+    bottom: 0; 
+}
+.process .bookbutton{
+    margin: 40px auto 0;
+}
+
+/* ceo */
+.ceo{
+    margin: 120px auto 0;
+    width: 1366px;
+    height: 600px;
+    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background phrase screen desktop.png");
+}
+.rightsidebox{
+    width: 460px;
+    height: 370px;
+    margin-left: 706px;
+    padding-top: 115px;
+}
+.rightsidebox h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    width: 460px;
+    height: 140px;
+}
+.smallceobox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+
+    width: 252px;
+    height: 79.51px;
+}
+.rightsidebox div img{
+    width: 80px;
+    height: 79.51px;
+}
+.ceodescription h4{
+    width: 153px;
+    height: 46px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 23px;
+    color: #E919E5;
+}
+.ceodescription p{
+    width: 120px;
+    height: 32px;
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 1px;
+}
+.rightsidebox .bookbutton{
+    margin-top: 40px;
+}
+
+/* faq */
+.faq{
+    height: 431px;
+    width: 1160px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    margin-top: 120px;
+}
+.faq h1{
+    height: 47px;
+    line-height: 95%;
+    width: 533px;
+}
+.faq h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.faqcontainer{
+    display: flex;
+    width: 100%;
+    height: 330px;
+    margin-top: 40px;
+}
+.faqexample{
+    width: 560px;
+    height: 259px;
+}
+.faqexample ul{
+    padding: 0;
+    margin: 0;
+}
+.faqexample ul li{
+    width: 560px;
+    height: 100%;
+    background: #1D1D1D;
+    border-radius: 10px;    
+    margin-bottom: 10px;
+}
+.faqexample ul li div{
+    padding: 10px;
+}
+.faqexample ul li div h4{
+    width: 545px;
+    height: 23px;  
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.faqexample ul li div p{
+    width: 540px;
+    height: 100px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.faqform{
+    width: 502px;
+    height: 290px;
+    margin-left: 40px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    padding: 20px 29px;
+}
+.faqform > h4{
+    height: 23px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.faqform p{
+    width: 384px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    margin: 8px auto 0;
+}
+.faqform form{
+    margin-top: 20px;
+}
+.faqform form .formtel{
+    margin-top: 30px;
+}
+.questionhandler{
+    display: inline-block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 637px;
+}
+.questionhandler::after,
+.questionhandler::before{
+    content: "";
+    display: block;
+    background-color:  rgba(233, 25, 229, 1);
+    width: 21px;
+    height: 3px;
+    position: absolute;
+    transition: 0.3s;
+}
+.questionhandler::before{
+    transform: rotate(90deg);
+    top: 11px;
+}
+.questionhandler::after{
+    top: 11px;
+}
+.opencross.questionhandler::after{
+    transform: rotate(-45deg);
+    transform-origin:100% 50%;
+    left: auto;
+    right: 14%;
+    top: 14%;
+}
+.opencross.questionhandler::before{
+    transform: rotate(45deg);
+    transform-origin:0% 50%;
+    left: 14%;
+    top: 14%;
+}
+
+/* reservationform */
+.reservationform{
+    height: 614px;
+    width: 1160px;
+    margin-left: calc(50% - 575px/2 - 292.5px);
+    margin-top: 120px;
+}
+.reservationform h1{
+    line-height: 95%;
+    width: 460px;
+    height: 122px;
+}
+.reservationform h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.reservationform form{
+    margin-top: 49px;
+    width: 100%;
+    height: 443px;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+}
+
+
+/* footer */
+footer{
+    margin: 45px auto 0;
+    height: 240px;
+    width: 1366px;
+    background: rgba(145, 10, 183, 1);
+}
+.footercontainer{
+    display: flex;
+    height: 180px;
+    width: 1160px;
+    margin-left: calc(50% - 105px/2 - 527.5px);
+    padding-top: 60px;
+}
+.footerleft{
+    height: 120px;
+    width: 201px;
+}
+.footerleft img{
+    width: 105px;
+height: 50px;   
+}
+.footerleft p{
+    height: 20px;  
+}
+.footerleft p:first-of-type{
+    margin-top: 20px;
+}
+.footerleft p:nth-child(3){
+    margin-top: 5px;
+}
+.footermenu{
+    height: 100px;
+    width: 386px;
+    margin-left: 99px;
+
+}
+.footermenu ul{
+    width: 100%;
+    height: 100%;
+    column-count: 2;
+}
+.footermenu ul li{
+    margin-bottom:20px;
+    width: 90px;
+    height: 20px;
+    font-family: 'FuturaDemiC';
+    font-size: 17px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.footermenu ul li:nth-child(4),
+.footermenu ul li:nth-child(5){
+    margin-left: calc(50% - 33px/2 + 36.75px);
+}
+.footercontact{
+    width: 260px;
+    height: 120px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.footercontact h4{
+    margin-bottom: 20px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: none;
+}
+.footersns{
+    display: flex;
+}
+.footersns li{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.formobile{
+    display: none;
+}
+
+.popupinvisible{
+    display: none !important; 
+}
+.sns{
+    display: none;
+}
+.invisible{
+    display: none;
+}
+.notforpc{
+    display: none;
+}
+.reservationform form div{
+    display: none;
+}
