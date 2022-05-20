@@ -9,57 +9,77 @@
       content="mixrecordingstudio"
     />
     <link rel="stylesheet" href="mobile.css" type="text/css"
-    media="screen and (max-width: 390px)">
+    media="screen and (max-width: 743px)">
     <link rel="stylesheet" href="tablet.css" type="text/css"
- media="screen and (min-width: 391px, max-width: 744px)">
+ media="screen and (min-width: 744px) and (max-width: 1365px)">
     <link rel="stylesheet" href="pc.css" type="text/css"
  media="screen and (min-width: 1366px)">
   </head>
   <body>
     <header>
         <div class="headerContainer">
-            <div class="icon"></div>
-            <div class="menu">
-                <!-- click and display go down  -->
-                <ul>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">EXPERTS</a></li>
-                    <li><a href="#">FEEDBACKS</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">CONTACTS</a></li>
-                </ul>
+            <div class="constanttop notforpc">
+                <img class="icon" src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/Mask group (Traced).png">
+                <div id="menuOpenButton"><span>MENU</span></div>
             </div>
-            <div class="reservation">
-                <a>BOOK NOW</a>
-            </div>
-            <div class="SNS">
-                <div class="sns_container">
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
-                    <li><a><img></a></li>
+            <div class="menucontainer">
+                <img class="icon" src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/Mask group (Traced).png">
+                <div id="menuCloseButton" class="notforpc">
+                    <span>CLOSE</span>
                 </div>
-                <p>Mix Recording Studio © 2022</p>
+                <div class="menu">
+                    <!-- click and display go down  -->
+                    <ul>
+                        <li><a class='menuitems main'>MAIN</a></li>
+                        <li><a class='menuitems about'>ABOUT</a></li>
+                        <li><a class='menuitems expert' >EXPERTS</a></li>
+                        <li><a class='menuitems feedback' >FEEDBACKS</a></li>
+                        <li><a class='menuitems menufaq' >FAQ</a></li>
+                        <li><a class='menuitems contact'>CONTACTS</a></li>
+                    </ul>
+                </div>
+                <div class="reservation">
+                    <a>BOOK NOW</a>
+                </div>
+                <div class="sns notforpc">
+                    <div class="snscontainer">
+                        <ul>
+                            <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector.png"></a></li>
+                            <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector (1).png"></a></li>
+                            <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector (2).png"></a></li>
+                            <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector (3).png"></a></li>                     
+                        </ul>
+
+                    </div>
+                    <p>Mix Recording Studio © 2022</p>
+                </div>
             </div>
+
         </div>
     </header>
 
+    <div class="bookbutton formobile fixedbutton">
+        <a>BOOK NOW</a>
+    </div>
+
     <main>
-        <div class="top">
+        <div class="top" id="top">
             <div class="topleftside">
                 <h1><font color="#CC02C9">ONLINE CONSULTATIONS</font><br>with music industry experts </h1>
                 <p>Get advice on management, production, songwriting and engeneering and get new level for your art</p>
-                <div class="bookbutton">
-                    <a>BOOK NOW</a>
-                </div>
-                <div class="infobutton">
-                    <a>MORE INFO</a>
+                <div class="buttoncontainer">
+                    <div class="bookbutton">
+                        <a>BOOK NOW</a>
+                    </div>
+                    <div class="infobutton">
+                        <a>MORE INFO</a>
+                    </div>
                 </div>
             </div>
-            <img class="toprightimg">
+            <img class="toprightimg" src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/image 23.png">
         </div>
 
-        <div class="suggestion">
+        <div class="suggestion" id="suggetion">
             <h1>Are you <font color="#CC02C9">straggling with this?</font></h1>
             <div class="problems">
                 <ul>
@@ -69,238 +89,283 @@
                     <li><h4>04.</h4><h4>describrion of problem #1</h4></li>
                 </ul>
             </div>
-            <div class="mysterious text">
-                <h3>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                    Nulla molestie sapien at neque auctor finibus. Nunc<br>
-                    malesuada vel dui in suscipit. 
+            <div class="mysterioustext">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit. 
                 </h3>
             </div>
         </div>
 
-        <div class="achivement">
+        <div class="achivement" id="achivement">
             <h1>Our <font color="#CC02C9">impact</font></h1>
             <div class="leftcircle">
-                <h4>100 000+</h4>
+                <h2>100 000+</h2>
                 <p>songs released in different music services</p>
             </div>
             <div class="centercircle">
-                <h4>8000</h4>
+                <h2>8000</h2>
                 <p>artist cases in our portfolio</p>
             </div>
             <div class="rightcircle">
-                <h4>180millions</h4>
+                <h2>180<span>millions</span></h2>
                 <p>our artists plays across the internet</p>
             </div>
         </div>
 
-        <div class="partners">
-            <h1>OUR partners</h1>
+        <div class="partners" id="partners">
+            <h1>OUR <span>partners</span></h1>
             <div class="companies">
                 <ul>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
+                    <li><img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/universal logo.png"></li>
+                    <li><img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/republic logo.png"></li>
+                    <li><img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/ao atlantic logo.png"></li>
+                    <li><img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/sony logo.png"></li>
                 </ul>
             </div>
         </div>
 
-        <div class="experts">
-            <h1>meet our experts</h1>
-            <div class="firstexpert">
-                <img>
-                <div class="expertdescriptioncontainer">
-                    <div class="expertdescription">
-                        <div>
-                           <h4>Mikhail<br>Mazunov</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit. Nulla molestie sapien at neque<br> 
-                                auctor finibus. Nunc malesuada vel dui in suscipit. 
-                            </p>
-                            <a><h4>MORE INFO</h4><span></span></a>
+        <div class="experts" id="experts">
+            <h1>meet our <span>experts</span></h1>
+            <div class="expertscontainer">
+                <div class="firstexpert">
+                    <img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/Xnip2022-04-19_12-02-56.png">
+                    <div class="expertdescriptioncontainer">
+                        <div class="expertdescription">
+                            <div class="experttext">
+                                <h4>Mikhail<br>Mazunov</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nulla molestie sapien at neque
+                                    auctor finibus. Nunc malesuada vel dui in suscipit. 
+                                </p>
+                                <a id="popupshow0"><h4>MORE INFO</h4><span></span></a>
+                            </div>
+                            <h3 class="cost notforpc">$500 / hour</h3>
+                            <div class="insta">
+                                <a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Subtract.png"><p>@nic_name</p></a>
+                            </div>
                         </div>
-                        <div class="insta">
-                            <a><img>@nic_name</a>
+                        <div class="bookbutton">
+                            <a>BOOK IT NOW</a>
                         </div>
-                    </div>
-                    <div class="bookbutton">
-                        <a>BOOK NOW</a>
                     </div>
                 </div>
-            </div>
-            <div class="secondexpert">
-                <img>
-                <div class="expertdescriptioncontainer">
-                    <div class="expertdescription">
-                        <div>
-                           <h4>Mikhail<br>Mazunov</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit. Nulla molestie sapien at neque<br> 
-                                auctor finibus. Nunc malesuada vel dui in suscipit. 
-                            </p>
-                            <a><h4>MORE INFO</h4><span></span></a>
+                <div class="secondexpert">
+                    <img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/Xnip2022-04-19_12-02-55.png">
+                    <div class="expertdescriptioncontainer">
+                        <div class="expertdescription">
+                            <div class="experttext">
+                            <h4>Mikhail<br>Mazunov</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nulla molestie sapien at neque
+                                    auctor finibus. Nunc malesuada vel dui in suscipit. 
+                                </p>
+                                <a id="popupshow1"><h4>MORE INFO</h4><span></span></a>
+                            </div>
+                            <h3 class="cost notforpc">$500 / hour</h3>
+                            <div class="insta">
+                                <a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Subtract.png"><p>@nic_name</p></a>
+                            </div>
                         </div>
-                        <div class="insta">
-                            <a><img>@nic_name</a>
-                        </div>
-                    </div>
-                    <div class="bookbutton">
-                        <a>BOOK NOW</a>
-                    </div>
-                </div>
-            </div>
-            <div class="thirdexpert">
-                <img>
-                <div class="expertdescriptioncontainer">
-                    <div class="expertdescription">
-                        <div>
-                           <h4>Mikhail<br>Mazunov</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur<br>
-                                adipiscing elit. Nulla molestie sapien at neque<br> 
-                                auctor finibus. Nunc malesuada vel dui in suscipit. 
-                            </p>
-                            <a><h4>MORE INFO</h4><span></span></a>
-                        </div>
-                        <div class="insta">
-                            <a><img>@nic_name</a>
+                        <div class="bookbutton">
+                            <a>BOOK IT NOW</a>
                         </div>
                     </div>
-                    <div class="bookbutton">
-                        <a>BOOK NOW</a>
+                </div>
+                <div class="thirdexpert">
+                    <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Xnip2022-04-19_12-02-57.png">
+                    <div class="expertdescriptioncontainer">
+                        <div class="expertdescription">
+                            <div class="experttext">
+                            <h4>Mikhail<br>Mazunov</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nulla molestie sapien at neque
+                                    auctor finibus. Nunc malesuada vel dui in suscipit. 
+                                </p>
+                                <a id="popupshow2"><h4>MORE INFO</h4><span></span></a>
+                            </div>
+                            <h3 class="cost notforpc">$500 / hour</h3>
+                            <div class="insta">
+                                <a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Subtract.png"><p>@nic_name</p></a>
+                            </div>
+                        </div>
+                        <div class="bookbutton">
+                            <a>BOOK IT NOW</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup">
-            <img>
-            <div>
-                <h2>Mikhail Mazunov</h2>
-                <p class="status">SOUND PRODUCING</p>
-                <p class="explanation1">Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit.<br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit. </p>
-                <p class="explanation2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit. 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                <div class="bookbottunwhite">
-                    <a>BOOK IT NOW</a>
-                </div>
-            </div>
-        </div>
-        <div class="contactform">
-            <div>
-                <h3>need some help or advice in produsing or other stage of your product?</h3>
-                <h4>Just fill the form! </h4>
-                <p>We’ll call you back for 30 minutes and give you a short consultation about our product</p>
-            </div>
-            <form action="#" method="post">
-                <input type="text" name="customer_name" size="30" maxlength="40" value="your name">
-                <input type="tel" name="customer_phonenumber" size="30" maxlength="40" value="phone number">
-                <h4>thank! we have received your details and will contact you soon</h4>
-                <button type="submit">send</button>
-            </form>
-        </div>
-
-        <div class="compriment">
-            <h1>what artists says about us</h1>
-            <div>
-                <ul>
-                    <li>
-                        <img>
-                        <div>
-                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</p>
-                            <p>john doe</p>
-                            <p>Singer, rap-artist</p>
-                            <p>Instagram: <a>@nic_name</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <img>
-                        <div>
-                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</p>
-                            <p>john doe</p>
-                            <p>Singer, rap-artist</p>
-                            <p>Instagram: <a>@nic_name</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <img>
-                        <div>
-                            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</p>
-                            <p>john doe</p>
-                            <p>Singer, rap-artist</p>
-                            <p>Instagram: <a>@nic_name</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="process">
-            <h2>how it works</h2>
-            <div class="problems">
-                <ul>
-                    <li><h3>step 1</h3><img>
-                        <p>Choose the date & time </p></li>
-                    <li><h3>step 2</h3><img>
-                        <p>pay online </p></li>
-                    <li><h3>step 3</h3><img>
-                        <p>get zoom link an hour before consultation in email</p></li>
-                    <li><h3>step 4</h3><img>
-                        <p>Online consultation via zoom with our expert</p></li>
-                </ul>
-            </div>
-            <div class="bookbottun">
-                <a>BOOK IT NOW</a>
-            </div>
-        </div>
-
-        <div class="ceo">
-            <div>
-                <h3>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</h3>
-                <div>
-                    <img>
-                    <h4>Konstantin Podyachev</h4>
-                </div>
-                <p>Founder and CEO <br>Mix Recording Studio</p>
-                <div class="bookbottun">
-                    <a>BOOK IT NOW</a>
                 </div>
             </div>
 
-        </div>
-
-        <div class="faq">
-            <h2>FAQ</h2>
-            <div class="faqexample">
-                <div>
-                    <h4>is it online or in person?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus arcu vel placerat tempor. Vivamus non condimentum mi, non fermentum nulla. Cras fermentum pellentesque eros, quis blandit metus imperdiet consequat. In viverra quam erat, non consequat augue fermentum ut. Curabitur et nulla semper.</p>
-                </div>
-                <div>
-                    <h4>how does it works?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus arcu vel placerat tempor. Vivamus non condimentum mi, non fermentum nulla. Cras fermentum pellentesque eros, quis blandit metus imperdiet consequat. In viverra quam erat, non consequat augue fermentum ut. Curabitur et nulla semper.</p>
-                </div>
-                <div>
-                    <h4>What is included?</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus arcu vel placerat tempor. Vivamus non condimentum mi, non fermentum nulla. Cras fermentum pellentesque eros, quis blandit metus imperdiet consequat. In viverra quam erat, non consequat augue fermentum ut. Curabitur et nulla semper.</p>
-                </div>
+            <div id="popup" class="popcontainer , popupinvisible">
+                <div class="pop">
+                    <span id="popupclose"><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Union.png"></span>
+                    <img src="#">
+                    <div>
+                        <h2>Mikhail Mazunov</h2>
+                        <p class="status">SOUND PRODUCING</p>
+                        <div class="explanation">
+                            <p>Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit.<br>
+                                <br>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit. </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="formobile">Nulla molestie sapien at neque auctor finibus. Nunc malesuada vel dui in suscipit</span></p>                        
+                        </div>
+                        <a class="bookbuttonwhite">BOOK IT NOW</a>
+                    </div>
+                    
+                </div>  
+                <div id="popupback"></div>              
             </div>
 
-            <div class="faqform">
-                <h4>did not find the answer?</h4>
-                <p>Fill to next form! We’ll call you back for 30 minutes and give you a short consultation about our product</p>
+            <div class="contactform">
+                <div class="contactbox">
+                    <h3>need some help or advice in produsing or other stage of your product?</h3>
+                    <div class="asking">
+                        <h4>Just fill the form! </h4>
+                        <p>We’ll call you back for 30 minutes and give you a short consultation about our product</p>
+                    </div>
+                </div>
                 <form action="#" method="post">
-                    <input type="text" name="customer_name" size="30" maxlength="40" value="your name">
-                    <input type="tel" name="customer_phonenumber" size="30" maxlength="40" value="phone number">
-                    <h4>thank! we have received your details and will contact you soon</h4>
-                    <button type="submit">send</button>
+                    <div class="formarea">
+                        <input class="formname" type="text" name="customer_name" size="30" maxlength="40" placeholder="Your name">
+                        <input class="formtel" type="tel" name="customer_phonenumber" size="30" maxlength="40" placeholder="PPhone number">
+                    </div>
+                    <h4 class="invisible">thank! we have received your details and will contact you soon</h4>
+                    <button type="submit" onclick="changeText()">send</button>
                 </form>
             </div>
         </div>
 
+
+        <div class="compriment" id="compriment">
+            <h1>what artists says<span> about us</span></h1>
+            <ul>
+                <li>
+                    <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\image 19.png">
+                    <div class="coments">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</p>
+                        <p>john doe</p>
+                        <p>Singer, rap-artist</p>
+                        <p>Instagram: <a>@nic_name</a></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\image 19.png">
+                    <div class="coments">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</p>
+                        <p>john doe</p>
+                        <p>Singer, rap-artist</p>
+                        <p>Instagram: <a>@nic_name</a></p>
+                    </div>
+                </li>
+                <li>
+                    <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\image 19.png">
+                    <div class="coments">
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</p>
+                        <p>john doe</p>
+                        <p>Singer, rap-artist</p>
+                        <p>Instagram: <a>@nic_name</a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="process" id="process">
+            <h1>how it <span>works</span></h1>
+            <div class="problems">
+                <ul>
+                    <li>
+                        <h3>step 1</h3>
+                        <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Group 71.png">
+                        <p><span>Choose the date & time </span></p>
+                    </li>
+                    <li>
+                        <h3>step 2</h3>
+                        <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Group 70.png">
+                        <p><span>pay online </span></p>
+                    </li>
+                    <li>
+                        <h3>step 3</h3>
+                        <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Group 69.png">
+                        <p><span>get zoom link an hour before consultation in email</span></p>
+                    </li>
+                    <li>
+                        <h3>step 4</h3>
+                        <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Group 68.png">
+                        <p><span>online consultation via zoom with our expert</span></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="bookbutton">
+                <a>BOOK IT NOW</a>
+            </div>
+        </div>
+
+        <div class="ceo" >
+            <div class="rightsidebox">
+                <h3>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie sapien at neque auctor finibus.”</h3>
+                <div class="smallceobox">
+                    <img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\image 18.png">
+                    <div class="ceodescription">
+                        <h4>Konstantin Podyachev</h4>
+                        <p>Founder and CEO Mix Recording Studio</p>
+                    </div>
+                </div>
+                <div class="bookbutton">
+                    <a>BOOK IT NOW</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="faq" id="faq">
+            <h1>FA<span>Q</span></h1>
+            <div class="faqcontainer">
+                <div class="faqexample">
+                    <ul>
+                        <li>
+                            <div>
+                                <h4>is it online or in person?<span class="questionhandler opencross"></span></h4>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus arcu vel placerat tempor. Vivamus non condimentum mi, non fermentum nulla. Cras fermentum pellentesque eros, quis blandit metus imperdiet consequat. In viverra quam erat, non consequat augue fermentum ut. Curabitur et nulla semper.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>how does it works?<span class="questionhandler"></span></h4>
+                                
+                                <p class="invisible">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus arcu vel placerat tempor. Vivamus non condimentum mi, non fermentum nulla. Cras fermentum pellentesque eros, quis blandit metus imperdiet consequat. In viverra quam erat, non consequat augue fermentum ut. Curabitur et nulla semper.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>What is included?<span class="questionhandler"></span></h4>
+                                
+                                <p class="invisible">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas finibus arcu vel placerat tempor. Vivamus non condimentum mi, non fermentum nulla. Cras fermentum pellentesque eros, quis blandit metus imperdiet consequat. In viverra quam erat, non consequat augue fermentum ut. Curabitur et nulla semper.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- make cross button -->
+                <div class="faqform">
+                    <h4 class="faqforpc">did not find the answer?</h4>
+                    <h4 class="notforpc">do you have some questions?</h4>
+                    <p>Fill to next form! We’ll call you back for 30 minutes and give you a short consultation about our product</p>
+                    <form action="#" method="post">
+                        <div class="formarea">
+                            <input class="formname" type="text" name="customer_name" size="30" maxlength="40" placeholder="Your name">
+                            <input class="formtel" type="tel" name="customer_phonenumber" size="30" maxlength="40" placeholder="Phone number">
+                        </div>
+
+                        <h4 class="invisible showuptext">thank! we have received your details and will contact you soon</h4>
+                        <button type="submit" onclick="changeText()">send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
         <!-- reservation form -->
-        <div class="reservationform">
-            <h1>book your success today</h1>
+        <div class="reservationform" id="reservation">
+            <h1>book your <span>success today</span></h1>
             <form>
                 <div>
                     <label for="message">message:</label><br>
@@ -314,30 +379,156 @@
     </main>
 
     <footer>
-        <div>
-            <img>
-            <p>Mix Recording Studio. 2022</p>
-            <p> © All rights are reserved</p>
-        </div>
-        <div>
-            <ul>
-                <li><a>ABOUT</a></li>
-                <li><a>EXPERTS</a></li>
-                <li><a>FEEDBACK</a></li>
-                <li><a>FAQ</a></li>
-                <li><a>CONTACTS</a></li>
-            </ul>
-        </div>
-        <div>
-            <h4>+1 323.218.7475</h4>
-            <h4>info@mixrecordingstudio.com</h4>
-            <ul class="sns">
-                <li><a><img></a></li>
-                <li><a><img></a></li>
-                <li><a><img></a></li>
-                <li><a><img></a></li>
-            </ul>
+        <div class="footercontainer">
+            <div class="footerleft">
+                <img src="C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/Mask group (Traced).png">
+                <p>Mix Recording Studio. 2022</p>
+                <p> © All rights are reserved</p>
+            </div>
+            <div class="footermenu">
+                <ul>
+                    <li><a class="menuitems about">ABOUT</a></li>
+                    <li><a class="menuitems expert">EXPERTS</a></li>
+                    <li><a class="menuitems feedback">FEEDBACK</a></li>
+                    <li><a class="menuitems menufaq">FAQ</a></li>
+                    <li><a class="menuitems contact">CONTACTS</a></li>
+                </ul>
+            </div>
+            <div class="footercontact">
+                <h4>+1 323.218.7475</h4>
+                <h4>info@mixrecordingstudio.com</h4>
+                <ul class="footersns">
+                    <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector.png"></a></li>
+                    <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector (1).png"></a></li>
+                    <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector (2).png"></a></li>
+                    <li><a><img src="C:\Users\ryuno\OneDrive\デスクトップ\itsdev_test\imgfortest\Vector (3).png"></a></li>
+                </ul>
+            </div>            
         </div>
     </footer>
+
+
+
+    <script type="text/javascript">
+    {
+        // popup
+        function popupImage() {
+            let popup = document.getElementById('popup');
+            if(!popup) return;
+
+            let blackBg = document.getElementById('popupback');
+            let closeBtn = document.getElementById('popupclose');
+            let showBtn = new Array();
+            for(let i = 0; i < 3; ++i){
+                showBtn.push(document.getElementById("popupshow" + i));
+            }
+            closePopUp(blackBg);
+            closePopUp(closeBtn);
+            closePopUp(showBtn[0]);
+            closePopUp(showBtn[1]);
+            closePopUp(showBtn[2]);
+            function closePopUp(elem) {
+                if(!elem) return;
+                elem.addEventListener('click', function() {
+                    popup.classList.toggle('popupinvisible');
+                });
+            } 
+        }
+        popupImage();
+
+        // scroll by menu
+        let y = 0;
+        let icon = 'icon',
+            main ='menuitems main',
+            about = 'menuitems about',
+            expert = 'menuitems expert',
+            feedback = 'menuitems feedback',
+            faq = 'menuitems menufaq',
+            contact = 'menuitems contact';
+        const iconId = document.getElementsByClassName('icon')[0],
+            aboutId = document.getElementById('top'),
+            expertsId = document.getElementById('experts'),
+            comprimentId = document.getElementById('compriment'),
+            faqId = document.getElementById('faq'),
+            reservationId = document.getElementById('reservation');
+        let aboutTop = aboutId.getBoundingClientRect().top,
+            expertsTop = expertsId.getBoundingClientRect().top,
+            comprimentTop = comprimentId.getBoundingClientRect().top,
+            faqTop = faqId.getBoundingClientRect().top,
+            reservationTop = reservationId.getBoundingClientRect().top;
+        const menutarget = document.querySelectorAll('.menuitems');
+
+        for (let i = 0; i < menutarget.length; i++){
+            menutarget[i].addEventListener('click',(e) => { 
+                if(e.target.className === about || e.target.className === main){
+                    y = aboutTop;
+                }else if(e.target.className === expert){
+                    y = expertsTop;
+                }else if(e.target.className === feedback){
+                    y = comprimentTop;
+                }else if(e.target.className === faq){
+                    y = faqTop;
+                }else if(e.target.className === contact){
+                    y = reservationTop;
+                }else{
+                    return;
+                }
+                window.scrollTo({top: y, left: 0, behavior: 'smooth'});
+                menuClose();
+            });
+        }
+        iconId.addEventListener('click',() => {
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        });
+        // menu controler
+
+        let openButton = document.getElementById('menuOpenButton'),
+            closeButton = document.getElementById('menuCloseButton'),
+            menuContainer = document.getElementsByClassName('menucontainer')[0];
+        if (window.matchMedia( "(max-width: 1365px)" ).matches) {
+            closeButton.classList.remove('notforpc');
+        }
+        function invisible(){
+            if(closeButton.classList.contains('notforpc')){
+                return;
+            }else{
+                menuContainer.classList.add('invisible');
+            }
+        }
+        openButton.addEventListener('click',() => {
+            menuContainer.classList.remove('invisible');
+            menuContainer.classList.remove('showmenuanime_reverse');
+            menuContainer.classList.add('showmenuanime');
+        });
+        function menuClose(){
+            menuContainer.classList.remove('showmenuanime');
+            menuContainer.classList.add('showmenuanime_reverse');
+            setTimeout(invisible,300);
+        }
+        closeButton.addEventListener('click',() =>{
+            menuClose();
+        });
+        menuClose();
+
+        // FAQ handler
+        const faqList = document.getElementsByClassName('faqexample')[0],
+              faqTarget = faqList.querySelectorAll('h4'),
+              faqCross = document.getElementsByClassName('questionhandler');
+
+        for (let i = 0; i < faqTarget.length; i++){
+            faqTarget[i].addEventListener('click',(e) => {
+                for (let j = 0; j < faqCross.length; j++){
+                    faqCross[j].classList.remove('opencross');
+                    faqTarget[j].nextElementSibling.classList.add('invisible');
+                };
+                faqCross[i].classList.add('opencross');
+                faqTarget[i].nextElementSibling.classList.remove('invisible');
+            });
+        }
+
+    }
+
+    </script>
+
   </body>
 </html>
