@@ -2,15 +2,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
 @font-face {
     font-family: "Montserrat";
-    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/Montserrat-ExtraBold.otf') format('opentype');
+    src: url('fonts/Montserrat-ExtraBold.otf') format('opentype');
 }
 @font-face {
     font-family: "FuturaBookC";
-    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaBookC - FuturaBookC - BookC.ttf') format('truetype');
+    src: url('fonts/FuturaBookC - FuturaBookC - BookC.ttf') format('truetype');
 }
 @font-face {
     font-family: "FuturaDemiC";
-    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaDemiC Regular.otf') format('opentype');
+    src: url('fonts/FuturaDemiC Regular.otf') format('opentype');
 }
 body{
     background: #0F0F0F;
@@ -250,7 +250,7 @@ header{
 /* top */
 .top{
     margin: 0 auto;
-    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background 1st screen desktop.png");
+    background-image:url("imgfortest/background 1st screen desktop.png");
     width: 744px;
     height:900px;
     display: flex;
@@ -720,6 +720,7 @@ header{
     top:10px;
     right: 10px;
     cursor: pointer;
+    margin:0;
 }
 .pop img{
     width: 200px;
@@ -1041,7 +1042,7 @@ form button{
     margin: 120px auto 0;
     width: 744px;
     height: 600px;
-    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background phrase screen desktop.png");
+    background-image:url("imgfortest/background phrase screen desktop.png");
 }
 .rightsidebox{
     width: 300px;
@@ -1139,6 +1140,7 @@ form button{
     line-height: 23px;
     text-transform: uppercase;
     display: inline-block;
+    position: relative;
 }
 .faqexample ul li:first-of-type div h4{
     height: 46px;  
@@ -1178,11 +1180,12 @@ form button{
 }
 
 .questionhandler{
-    display: inline-block;
+    display: block;
     position: absolute;
     width: 21px;
     height: 21px;
-    left: 336px;
+    left: 257px;
+    top: 0;
 }
 .questionhandler::after,
 .questionhandler::before{
