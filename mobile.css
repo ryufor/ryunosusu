@@ -2,15 +2,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
 @font-face {
     font-family: "Montserrat";
-    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/Montserrat-ExtraBold.otf') format('opentype');
+    src: url('fonts/Montserrat-ExtraBold.otf') format('opentype');
 }
 @font-face {
     font-family: "FuturaBookC";
-    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaBookC - FuturaBookC - BookC.ttf') format('truetype');
+    src: url('fonts/FuturaBookC - FuturaBookC - BookC.ttf') format('truetype');
 }
 @font-face {
     font-family: "FuturaDemiC";
-    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaDemiC Regular.otf') format('opentype');
+    src: url('fonts/FuturaDemiC Regular.otf') format('opentype');
 }
 body{
     background: #0F0F0F;
@@ -257,7 +257,7 @@ header{
 /* top */
 .top{
     margin: 0 auto;
-    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background 1st screen desktop.png");
+    background-image:url("imgfortest/background 1st screen desktop.png");
     width: 390px;
     height:890px;
     display: flex;
@@ -1043,7 +1043,7 @@ form button{
     margin: 120px auto 0;
     width: 390px;
     height: 600px;
-    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background phrase screen desktop.png");
+    background-image:url("imgfortest/background phrase screen mobile.png");
 }
 .rightsidebox{
     width: 300px;
@@ -1187,7 +1187,7 @@ form button{
     position: absolute;
     width: 21px;
     height: 21px;
-    left: 329px;
+    left: 278px;
 }
 .questionhandler::after,
 .questionhandler::before{
