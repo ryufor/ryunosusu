@@ -1,0 +1,1339 @@
+/* whole page */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap'); */
+@font-face {
+    font-family: "Montserrat";
+    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/Montserrat-ExtraBold.otf') format('opentype');
+}
+@font-face {
+    font-family: "FuturaBookC";
+    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaBookC - FuturaBookC - BookC.ttf') format('truetype');
+}
+@font-face {
+    font-family: "FuturaDemiC";
+    src: url('C:/Users/ryuno/AppData/Local/Microsoft/Windows/Fonts/FuturaDemiC Regular.otf') format('opentype');
+}
+body{
+    background: #0F0F0F;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+h3{
+    font-family: 'FuturaDemiC';
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+h4{
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+p{
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    margin: 0;
+    color: #FFFFFF;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style:none;
+}
+
+/* header */
+header{
+    position: fixed;
+    right: 0;
+    left: 0;
+    /* margin: 0 auto; */
+    width: 390px;
+    height: 88px;
+    z-index:2;
+    background-color: transparent;
+}
+
+.headerContainer{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.constanttop{
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    position: absolute;
+    width: 104px;
+    height: 49px;
+    left: 10px;
+    top: 21px;
+    cursor: pointer;
+}
+.menucontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    animation-duration: 0.3s;
+}
+#menuOpenButton,
+#menuCloseButton{
+    position: absolute;
+    width: 78px;
+    height: 46.03px;
+    right: 10px;
+    top: 20.97px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#menuOpenButton{
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+}
+#menuCloseButton{
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+.showmenuanime{
+    animation-name: showmenuanime;
+}
+.showmenuanime_reverse{
+    animation-name: showmenuanime_reverse;
+}
+.menu{
+    width:201px;
+    height:382px;
+    position: relative;
+    left: 20px;
+    top: 118px;
+}
+.menu ul{
+    padding: 0px;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.menu ul li{
+    height: 47px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+.menu ul li a{
+    color:#FFFFFF;
+    font-family: 'FuturaDemiC';
+    font-size: 40px;
+    line-height: 47px;
+    cursor: pointer;
+}
+
+.reservation{
+    position: absolute;
+    width: 300px;
+    height: 80px;
+    left: 20px;
+    top: 530px;
+    background:#FFFFFF;
+    box-shadow: 0px 10px 20px -10px rgba(145, 10, 183, 0.6);
+    border-radius: 10px;
+}
+.reservation a{
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 80px;
+    display: block;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #910AB7;
+    cursor: pointer;
+}
+.sns{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 182px;
+    height: 108px;
+    position: absolute;
+    top: 640px;
+    left: 20px;
+}
+.snscontainer{
+    width: 100%;
+    height: 38px;
+}
+.snscontainer ul{
+    display: flex;
+}
+.snscontainer ul li{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+}
+.snscontainer ul li:nth-child(4){
+    margin: 0;
+}
+
+@keyframes showmenuanime{
+    0%{
+      width: 0%;
+      opacity: 0;
+    }
+    25%{
+        opacity:0.5;
+    }
+    100%{
+      width: 100%;
+      opacity: 1;
+    }
+}
+@keyframes showmenuanime_reverse{
+    0%{
+      width: 100%;
+      opacity: 1;
+    }
+    25%{
+        opacity:0.5;
+    }
+    100%{
+      width: 0%;
+      opacity: 0;
+    }
+}
+
+.fixedbutton{
+    position: fixed;
+    z-index: 2;
+    bottom: 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* top */
+.top{
+    margin: 0 auto;
+    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background 1st screen desktop.png");
+    width: 390px;
+    height:890px;
+    display: flex;
+}
+.topleftside{
+    width: 345px;
+    height: 693px;
+    margin-left: calc(50% - 345px/2 + 22.5px);
+    margin-top: 114px;
+}
+.topleftside h1{
+    height: 128px;
+    font-size: 30px;
+    line-height: 105.9%;
+}
+.topleftside p{
+    margin-top: 295px;
+    height: 60px;
+    line-height: 20px;
+}
+.toprightimg{
+    position: absolute;
+    width: 390px;
+    height: 245px;
+    left: 0;
+    top: 262px;
+}
+
+.buttoncontainer a{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+
+}
+.bookbutton{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 80px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 20px rgba(145, 10, 183, 0.6));
+}
+.bookbutton a{
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+.infobutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 80px;
+    margin-top: 20px;
+    /* margin-left: 40px; */
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+
+/* suggestion */
+.suggestion{
+    margin-left: calc(50% - 300px/2);
+    margin-top: 120px;
+    width: 300px;
+    height: 1208px;
+}
+.suggestion h1{
+    width: 300px;
+    height: 111px;
+    line-height: 37px;
+    font-size: 30px;
+}
+.problems{
+    width: 100%;
+    height: 672px;
+    margin-top: 60px;
+}
+.problems ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    list-style-type:none;
+    flex-wrap: wrap;
+}
+.problems ul li{
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 10px;
+    width: 300px;
+    height: 138px;
+    backdrop-filter: blur(4px);
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+/* .problems ul li:nth-child(2),
+.problems ul li:nth-child(4){
+    margin-left: 20px;
+    margin-bottom: 20px;
+} */
+.problems ul li h4:first-child{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #E919E5;
+    margin-top: 0;
+}
+.problems ul li h4{
+    margin-top: 10px;
+    width: 220px;
+}
+.mysterioustext{
+    width: 300px;
+    height: 245px;
+    margin: 120px auto 0;
+
+}
+.mysterioustext h3{
+    font-family: 'FuturaBookC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+/* achivement */
+.achivement{
+    margin-top: 113px;
+    height: 864px;
+    width: 390px;
+    margin-left: calc(50% - 290px/2 - 64px);
+    position: relative;
+}
+.achivement h1{
+    height: 37px;
+    line-height: 37px;
+    font-size: 30px;
+    left: calc(50% - 370px/2 + 35px);
+    position: absolute;
+}
+.achivement div{
+    position: absolute;
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box,
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.achivement div h2{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    height: 85px;
+    align-items: center;
+    letter-spacing: -0.05em;
+}
+.achivement div h2 span{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    align-items: baseline;
+    text-transform: none;
+    display: inline-block;
+}
+.achivement div p{
+    color: rgba(231, 0, 227, 1);
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.leftcircle{
+    width: 394px;
+    height: 394px;
+    left: calc(50% - 394px/2 + 2px);
+    top: 55px;
+}
+.leftcircle h2, .leftcircle p{
+    margin-left: 47px;
+}
+.leftcircle h2{
+    margin-top: 129px;
+    margin-bottom: 0;
+}
+.leftcircle p{
+    width: 267px;
+}
+.centercircle{
+    width: 290px;
+    height: 290px;
+    left: calc(50% - 290px/2 - 64px);
+    top: 342px;
+    z-index: 1;
+}
+.centercircle h2, .centercircle p{
+    margin-left: 56px;
+}
+.centercircle h2{
+    margin-top: 77px;
+    margin-bottom: 0;
+}
+.centercircle p{
+    width: 187px;
+}
+.rightcircle{
+    width: 325px;
+    height: 325px;
+    left: calc(50% - 325px/2 + 43.5px);
+    top: 539px;
+}
+.rightcircle h2,.rightcircle p{
+    margin-left: 49px;
+}
+.rightcircle h2{
+    margin-top: 93px;
+    margin-bottom: 0;
+}
+.rightcircle p{
+    width:220px;
+}
+
+/* partners */
+.partners{
+    margin-top: 92px;
+    height: 346px;
+    width: 300px;
+    margin-left: calc(50% - 300px/2);
+    position: relative;
+}
+.partners h1{
+    height: 37px;
+    line-height: 37px;
+    font-size: 30px;
+}
+.partners h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.companies{
+    width: 100%;
+    height: 118px;
+    margin-top: 60px;
+}
+.companies ul, .companies ul li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.companies ul{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.companies ul li{
+    margin-right: 20px;
+    margin-bottom: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 140px;
+}
+.companies ul li img{
+    transform: scale(0.64);
+}
+.companies ul li:nth-child(2),
+.companies ul li:nth-child(4){
+    margin-right: 0;
+}
+
+/* experts */
+.experts{
+    margin-top: 120px;
+    height: 2466px;
+    width: 320px;
+    margin-left: calc(50% - 320px/2);
+}
+.experts h1{
+    height: 74px;
+    line-height: 37px;
+    width: 250px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+.experts h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.expertscontainer{
+    margin-top: 68px;
+}
+.expertscontainer > div{
+    width: 320px;
+    height: 525px;
+    background: rgba(29, 29, 29, 1);
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.expertscontainer > div > img{
+    width: 200px;
+    height: 249px;
+    display: block;
+    margin: 0 auto;
+}
+.expertdescriptioncontainer{
+    margin: 0 auto;
+    height: 256px;
+    width: 300px;
+}
+.expertdescription div > h4{
+    height: 46px;
+    width: 194px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.experttext p{
+    margin-top: 10px;
+    width: 280px;
+    height: 80px;
+    line-height: 20px;
+}
+.experttext a{
+    margin-top: 10px;
+    display: flex;
+    width: 141px;
+    height: 23px;
+    position: relative;
+    align-items: baseline;
+    cursor: pointer;
+}
+.expertdescription div a h4{
+    font-weight: 600;
+    height: 100%;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+}
+.expertdescription div a span{
+    border-top: 2px solid rgba(255, 255, 255, 1);
+    border-right: 2px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+}
+.expertdescription div a span::after{
+    content: "";
+    background: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    display: block;
+    width: 2px;
+    height: 13px;
+    margin-top: -2.5px;
+    margin-left: 3px;
+    transform: rotate(45deg);
+}
+.cost{
+    width: 250px;
+    height: 43px;
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 43px;
+    margin:10px 0 0;
+}
+.insta{
+    margin-top: 20px;
+    height: 14px;
+    cursor: pointer;
+}
+.insta a{
+    display: flex;
+}
+.insta a img{
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+}
+.insta a p{
+    color: rgba(233, 25, 229, 1);
+    width: 64px;
+    height: 14px;
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+.expertdescriptioncontainer .bookbutton{
+    display: none;
+    margin-top: 20px;
+}
+
+
+.popcontainer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    transition: .6s;
+}
+.pop{
+    width: 320px;
+    height: 884px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    /* display: flex; */
+    padding: 36px auto 0 10px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+.pop span img{
+    position: absolute;
+    width: 15.73px;
+    height: 15.73px;
+    top:10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.pop img{
+    width: 200px;
+    height: 249px;
+    margin: 36px auto 0;
+    display: block;
+}
+.pop > div{
+    height: 579px;
+    width: 300px;
+    margin-left: 10px;
+}
+.pop div h2{
+    width: 300px;
+    height: 98px;   
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+}
+#popupback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.status{
+    margin-top: 10px;
+    width: 300px;
+    height: 21px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 21px;
+}
+.explanation{
+    padding: 0px;
+    gap: 100px;
+    width: 300px;
+    height: 320px;
+    margin-top: 10px;
+}
+.explanation p:first-of-type{
+    height: 130px;
+}
+.explanation p{
+    height: 170px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.bookbuttonwhite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: 80px;
+    border: none;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 20px rgba(255, 255, 255, 0.6));
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #910AB7;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin-top:40px;
+}
+
+.contactform{
+    width: 320px;
+    height: 557px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: calc(50% - 320px/2);
+}
+.contactform > div{
+    padding: 0px;
+    gap: 15px;
+    width: 280px;
+    height: 278px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.contactform div h3{
+    width: 280px;
+    height: 175px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.asking{
+    width: 265px;
+    height: 88px;
+    margin-top: 15px;
+}
+.asking h4{
+    height: 23px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.asking p{
+    width: 100%;
+    height: 60px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.contactform form{
+    width:300px;
+    height:199px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.formname, .formtel{
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    padding: 0;
+    display: block;
+}
+.formtel{
+    margin-top: 30px;
+}
+.formname::placeholder, .formtel::placeholder{
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+input[type=text]:focus, input[type=tel]:focus {
+    outline: none;
+}
+.contactform form button{
+    margin: 30px auto;
+    width: 300px;
+    height: 80px;
+
+}
+
+/* form!!!!! */
+form h4{
+    width: 300px;
+    height: 90px;
+}
+
+form button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 260px;
+    height: 80px;
+    border:none;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    filter: drop-shadow(0px 15px 20px rgba(255, 255, 255, 0.6));
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #910AB7;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin: auto;
+    margin-top: 28.5px;
+    cursor: pointer;
+}
+
+/* compriment */
+.compriment{
+    width: 300px;
+    height: 978px;
+    margin-left: calc(50% - 300px/2);
+    margin-top: 120px;
+}
+.compriment h1{
+    height: 74px;
+    line-height: 37px;
+    width:300px;
+    font-size: 30px;
+}
+.compriment h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.compriment ul{
+    padding: 0;
+    margin-top: 60px;
+    width: 100%;
+    list-style-type:none;
+}
+.compriment ul li{
+    width: 300px;
+    height: 257px;
+    margin-top: 41px;    
+}
+
+.compriment ul li img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.coments{
+    width: 280px;
+    height: 84px;
+}
+.coments p:nth-child(1){
+    font-weight: 600;
+    line-height: 21px;
+}
+.coments p:nth-child(2){
+    height: 21px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 21px;
+    color: #E919E5;
+    margin-top: 10px;
+}
+.coments p:nth-child(3){
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 1px;
+}
+.coments p:nth-child(4){
+    width: 146px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF; 
+    margin-top: 10px;
+}
+
+/* proccess */
+.process{
+    height: 957px;
+    width: 320px;
+    margin-left: calc(50% - 320px/2 + 1px);
+    margin-top: 120px;
+}
+.process h1{
+    height: 28px;
+    line-height: 95%;
+    width: 300px;
+    font-size: 30px;
+    margin-left: 9px;
+}
+.process h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.process .problems{
+    margin-top: 79px;
+    height: 730px;
+}
+.process .problems ul li h3{
+    width: 143px;
+    height: 62px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 62px;
+    text-transform: uppercase;
+    color: #CC02C9;
+    margin: 0;
+}
+.process .problems ul li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 160px;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 0;
+}
+.problems ul li img{
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+}
+.process .problems ul li p{
+    width: 279px;
+    height: 63px;
+    line-height: 21px;
+    position: absolute;
+    bottom:5px; 
+   font-family: 'FuturaDemiC';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.process .problems ul li p span{
+    position: absolute;
+    bottom: 0; 
+}
+.process .bookbutton{
+    margin: 40px auto 0;
+    /* display: none; */
+}
+
+/* ceo */
+.ceo{
+    margin: 120px auto 0;
+    width: 390px;
+    height: 600px;
+    background-image:url("C:/Users/ryuno/OneDrive/デスクトップ/itsdev_test/imgfortest/background phrase screen desktop.png");
+}
+.rightsidebox{
+    width: 300px;
+    height: 405px;
+    margin: 0 auto;
+    padding-top: 97px;
+}
+.rightsidebox h3{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    width: 300px;
+    height: 175px;
+    margin: 0;
+}
+.smallceobox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 19px;
+    margin-top: 30px;
+    width: 252px;
+    height: 79.51px;
+}
+.rightsidebox div img{
+    width: 80px;
+    height: 79.51px;
+}
+.ceodescription h4{
+    width: 153px;
+    height: 46px;
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 23px;
+    color: #E919E5;
+}
+.ceodescription p{
+    width: 120px;
+    height: 32px;
+    font-family: 'FuturaBookC';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 1px;
+}
+.rightsidebox .bookbutton{
+    margin-top: 40px;
+}
+
+/* faq */
+.faq{
+    height: 819px;
+    width: 320px;
+    margin-left: calc(50% - 320px/2);
+    margin-top: 120px;
+}
+.faq h1{
+    height: 37px;
+    line-height: 95%;
+    width: 300px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.faq h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.faqcontainer{
+    /* display: flex; */
+    width: 100%;
+    height: 319px;
+    margin-top: 60px;
+}
+.faqexample{
+    width: 320px;
+    height: 100%;
+}
+.faqexample ul{
+    padding: 0;
+    margin: 0;
+}
+.faqexample ul li{
+    width: 100%;
+    height: 100%;
+    background: #1D1D1D;
+    border-radius: 10px;    
+    margin-bottom: 10px;
+}
+.faqexample ul li div{
+    padding: 10px;
+}
+.faqexample ul li div h4{
+    width: 270px;
+    height: 23px;  
+    font-family: 'FuturaDemiC';
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+/* .faqexample ul li:first-of-type div h4{
+    height: 46px;  
+} */
+.faqexample ul li div p{
+    width: 300px;
+    height: 160px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.faqform{
+    width: 300px;
+    height: 353px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #8125FC 0%, #910AB7 100%);
+    border-radius: 10px;
+    padding: 20px 10px 0;
+}
+.faqform > h4{
+    height: 46px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.faqform p{
+    height: 60px;
+    width: 300px;
+    line-height: 20px;
+    text-align: center;
+    margin: 8px auto 0;
+}
+.faqform form{
+    margin-top: 20px;
+}
+.faqform form .formtel{
+    margin-top: 30px;
+}
+
+.questionhandler{
+    display: inline-block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 329px;
+}
+.questionhandler::after,
+.questionhandler::before{
+    content: "";
+    display: block;
+    background-color:  rgba(233, 25, 229, 1);
+    width: 21px;
+    height: 3px;
+    position: absolute;
+    transition: 0.3s;
+}
+.questionhandler::before{
+    transform: rotate(90deg);
+    top: 11px;
+}
+.questionhandler::after{
+    top: 11px;
+}
+.opencross.questionhandler::after{
+    transform: rotate(-45deg);
+    transform-origin:100% 50%;
+    left: auto;
+    right: 14%;
+    top: 14%;
+}
+.opencross.questionhandler::before{
+    transform: rotate(45deg);
+    transform-origin:0% 50%;
+    left: 14%;
+    top: 14%;
+}
+
+/* reservationform */
+.reservationform{
+    height: 577px;
+    width: 300px;
+    margin-left: calc(50% - 300px/2);
+    margin-top: 140px;
+}
+.reservationform h1{
+    line-height: 37px;
+    width: 300px;
+    height: 74px;
+    font-size: 30px;
+}
+.reservationform h1 span{
+    color: rgba(231, 0, 227, 1);
+}
+.reservationform form{
+    margin-top: 60px;
+    width: 100%;
+    height: 443px;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: 
+    linear-gradient(#0f0f0f 0 0) padding-box, /*this is your grey background*/
+    linear-gradient(114.9deg, rgba(255, 255, 255, 0.5) 18.57%, rgba(15, 15, 15, 0.5) 37.89%, rgba(95, 95, 95, 0.5) 81.32%, rgba(255, 255, 255, 0.5) 95.85%) border-box;
+  border: 1px solid transparent;
+}
+
+
+/* footer */
+footer{
+    margin: 120px auto 0;
+    height: 558px;
+    width: 390px;
+    background: rgba(145, 10, 183, 1);
+}
+.footercontainer{
+    height: 448px;
+    width: 300px;
+    margin-left: calc(50% - 300px/2);
+    padding-top: 60px;
+}
+.footerleft{
+    height: 120px;
+    width: 201px;
+}
+.footerleft img{
+    width: 105px;
+    height: 50px;   
+}
+.footerleft p{
+    height: 20px;  
+}
+.footerleft p:first-of-type{
+    margin-top: 20px;
+}
+.footerleft p:nth-child(3){
+    margin-top: 5px;
+}
+.footermenu{
+    height: 100px;
+    width: 246px;
+    margin-top: 50px;
+}
+.footermenu ul{
+    width: 100%;
+    height: 100%;
+    column-count: 2;
+}
+.footermenu ul li{
+    margin-bottom:20px;
+    width: 90px;
+    height: 20px;
+    font-family: 'FuturaDemiC';
+    font-size: 17px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.footermenu ul li:nth-child(4),
+.footermenu ul li:nth-child(5){
+    margin-left: 78px;
+}
+.footercontact{
+    width: 260px;
+    height: 120px;
+    margin-top: 50px;
+}
+.footercontact h4{
+    margin-bottom: 20px;
+    height: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: none;
+}
+.footersns{
+    display: flex;
+}
+.footersns li{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.popupinvisible{
+    display: none !important; 
+}
+.invisible{
+    display: none;
+}
+.faqforpc{
+    display: none;
+}
+.reservationform form div{
+    display: none;
+}
